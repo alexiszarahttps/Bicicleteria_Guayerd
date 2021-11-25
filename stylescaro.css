@@ -1,0 +1,317 @@
+/*Mantener o quitar según sea necesario*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+.header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.99);
+}
+.inner-header {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.logo_container {
+  height: 100%;
+  display: table;
+  float: left;
+}
+img {
+  height: 100%;
+  width: 50%;
+}
+.navegacion {
+  float: right;
+  height: 100%;
+}
+.navegacion a {
+  height: 100%;
+  display: table;
+  float: left;
+  padding: 0px 20px;
+}
+.navegacion a li {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+  color: whitesmoke;
+  font-size: 16px;
+}
+.inner-header ul img {
+  width: 100px;
+  height: 50px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(./img/fondo.jpg);
+  background-size: 100%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+/*Codigo de hoja bicis-urbanas.html*/
+
+.contenedor-productos {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 35px;
+  margin-bottom: 55px;
+}
+
+.card {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.5);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.card:hover {
+  transform: translate(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+  color: midnightblue;
+}
+
+/*Codigo de hoja bici.html*/
+
+#content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 28px;
+}
+
+.column {
+  width: 600px;
+  padding: 10px;
+}
+
+#featured {
+  max-width: 500px;
+  max-height: 600px;
+  object-fit: cover;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.thumbnail {
+  object-fit: cover;
+  max-width: 180px;
+  max-height: 100px;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 5px;
+  border: 2px solid black;
+}
+
+.thumbnail:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+}
+
+#slide-wrapper {
+  max-width: 500px;
+  display: flex;
+  min-height: 100px;
+  align-items: center;
+}
+
+#slider {
+  width: 440px;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+#slider::-webkit-scrollbar {
+  width: 8px;
+}
+
+#slider::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+#slider::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  outline: 1px solid slategrey;
+  border-radius: 100px;
+}
+
+#slider::-webkit-scrollbar-thumb:hover {
+  background-color: black;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  opacity: 0.5;
+  width: 35px;
+  height: 35px;
+}
+
+.lista-bici {
+  list-style-type: disc;
+  font-size: 23px;
+  font-family: "Bebas Neue";
+  color: white;
+  text-shadow: 0px 2px 4px black;
+}
+.footer {
+  margin-top: 20%;
+  background: rgba(7, 32, 77, 0.87);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.99);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  color: blanchedalmond;
+}
+.caja {
+  border-left: solid 2px blanchedalmond;
+  padding: 5px 20px;
+}
+#cajasolitaria {
+  border: none;
+}
+
+.cero {
+  color: black;
+  font-size: 18px;
+}
+
+/* HOJA DEL CARRITO: carritoalexis.html */
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 650px;
+  margin: 0 auto;
+  justify-content: space-around;
+  margin-top: 50px;
+  padding-bottom: 100px;
+}
+
+.products-container ion-icon {
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 2px solid black;
+  margin: 0 auto;
+}
+
+.product-title {
+  width: 45%;
+}
+
+.price {
+  width: 15%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.quantity {
+  width: 30%;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+.total {
+  width: 10%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.product {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid black;
+}
+
+.product ion-icon {
+  cursor: pointer;
+}
+
+.products {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products img {
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+.navegacion ion-icon {
+  vertical-align: bottom;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+@media (max-width: 500px) {
+  .sm-hide {
+    display: none;
+  }
+
+  .products,
+  .product-header {
+    justify-content: center;
+  }
+
+  .basketTotalContainer {
+    padding-right: 8%;
+  }
+}

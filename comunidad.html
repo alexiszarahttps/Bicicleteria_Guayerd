@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comunidad BBGA Zideral</title>
+    <link rel="stylesheet" href="./stylebelen.css" />
+  </head>
+  <body>
+    <div class="all">
+      <div class="text-left">
+        <h2>BGA Zideral</h2>
+        <h3>
+          La comunidad BGA Zideral te brinda beneficios exclusivos para vos.
+          <br />Te los vas a perder?
+        </h3>
+        <p>Traé tu bicicleta antigua y llevate lo que quieras con DESCUENTO!</p>
+      </div>
+      <div>
+        <div class="p-comunidad">
+          <!--INICIAR SESION-->
+          <div class="comude">
+            <form action="">
+              <div class="usuarios-r">
+                <input type="text" id="pri" placeholder="Correo electronico" />
+                <input type="password" id="segu" placeholder="Contraseña" />
+                <!--boton para iniciar sesion-->
+                <div class="iniciar">
+                  <a href="./usuario.html">
+                    <input
+                      type="button"
+                      id="iniciar"
+                      value="Iniciar sesion"
+                      onclick="go()"
+                    />
+                  </a>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--REGISTRAR USUARIO-->
+          <div class="noUsuario">
+            <!--botón para abrir la pantalla emergente-->
+            <button class="windowEmergente" id="windowEmergente">
+              Registrarme
+            </button>
+          </div>
+          <div class="overley" id="overley">
+            <!--ventana emergente-->
+            <div class="popup" id="popup">
+              <a href="#" class="closepopup" id="closepopup"> CERRAR </a>
+              <h2>Registrate</h2>
+              <h3>Formá parte de nuestra comunidad</h3>
+              <form action="">
+                <!--campos para ingreso de datos-->
+                <div class="contenedor-inputs">
+                  <input type="text" id="nameUsuario" placeholder="Nombre" />
+                  <input
+                    type="email"
+                    id="mail"
+                    placeholder="Correo electronico"
+                  />
+                  <input type="password" id="contra" placeholder="Contraseña" />
+                </div>
+                <!--boton para registrarse-->
+                <div class="registrarse">
+                  <a href="#">
+                    <button type="button" id="registro" onclick="registrar()">
+                      Registrarme
+                    </button>
+                  </a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./appbelen.js"></script>
+  </body>
+</html>
